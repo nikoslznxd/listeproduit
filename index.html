@@ -20,6 +20,14 @@
     <div class="slogan">
     <h1> The Walker's Capital </h1>
     </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">ACCEUIL</a></li>
+        <li><a href="#">ACHAT</a></li>
+        <li><a href="#">QUI-SOMME-NOUS</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
     <div class="burger">
      <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
@@ -35,11 +43,17 @@
     </ul>
 </div>
 </div>
-</div>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
 </script>
 
+<script type="text/javascript">
+$(function(){
+    $('.burger').on('click touch', function(e){
+        $('.sousmenu').slideToggle();
+    });
+});
+</script>
 
-
+</div>
 </body>
