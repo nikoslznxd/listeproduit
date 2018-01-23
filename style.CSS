@@ -44,3 +44,31 @@
   margin-top: 40px;
   margin-left: 600px;
 }
+
+.sousmenu{
+  display: none;
+width: 1072px;
+height: 69px;
+background-color:#009cab;
+margin: auto;
+border-left: :5px;
+border-right: 5px;
+border-bottom: 5px;
+border-top: 0px;
+border-style:solid;
+border-color: #7abdd4;
+}
+.menu2{
+  float: left;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+.menu2 ul li{
+display: inline-block;
+margin-left: 93px;
+font-family: Raleway;
+}
+.menu2 ul li a{
+  color: #fff;
+  text-decoration: none;
+}
