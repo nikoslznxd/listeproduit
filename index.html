@@ -5,7 +5,7 @@
   <meta name="description" content="name">
   <meta charset="utf-8">
   <link href="style.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
  </head>
@@ -44,6 +44,13 @@
 </div>
 </div>
 
+<div style="clear:both;"></div>
+
+<div class='test'>
+  <i class="fas fa-angle-double-up"></i>
+  </div>
+
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
 </script>
 
@@ -52,6 +59,46 @@ $(function(){
     $('.burger').on('click touch', function(e){
         $('.sousmenu').slideToggle();
     });
+});
+</script>
+
+<script type="text/javascript">
+var age = parseInt(prompt('quel est votre age?'));
+if (age <=0) {
+alert('ho vraiment, vous manquez d humour benjamin button');
+} else if(1<=age && age<18) {
+  alert('vous n\'etes pas majeur');
+}else if (age == 18) {
+  alert ('pile ce qu\'il faut amuse toi bien');
+}else if (18 <= age && age < 50) {
+  alert('vous commencer à vous faire vieux');
+}else if (50 <= age && age<80) {
+alert(' aussi vieux et pourtant si vif!');
+} else if ( 80<= age && age<120) {
+  alert('la il va falloir arretter d\'astiquer le manche');
+}else if (age >120) {
+  alert( 'vous êtes encore en vie?');
+}else {
+  alert('c\'est un chiffre ça?');
+}
+</script>
+
+<script type="text/javascript">
+$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.test').fadeIn(500);
+		} else {
+			$('.test').fadeOut(500);
+		}
+	});
+</script>
+
+
+<script type="text/javascript">
+$(function(){
+  $('.test').click(function(){
+    $(window).scrollTop(0);
+  });
 });
 </script>
 
